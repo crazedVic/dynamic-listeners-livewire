@@ -3,13 +3,13 @@
     wire:click.away="$set('showing', false)">
     @if($task)
     <form class="p-20 bg-white text-black border border-gray-300 shadow-md w-1/2">
-        <div class="w-full whitespace-nowrap">
+        <div class="w-full whitespace-nowrap mb-2">
             Task
-            <input type="text" class="border border-gray-200 shadow rounded p-1 w-full"
+            <input type="text" class="ml-4 border border-gray-200 shadow rounded p-1 w-full"
                    wire:model="task.name">
         </div>
         <div>Status
-            <select class="border border-gray-200 shadow rounded p-1"
+            <select class="ml-2 border border-gray-200 shadow rounded p-1"
                     wire:model="task.status">
                 <option value="Delayed">Delayed</option>
                 <option value="Completed">Completed</option>
@@ -18,7 +18,9 @@
             </select>
         </div>
         <div class="w-full text-right">
-        <button class="bg-blue-600 text-white rounded-md px-2 py-1 "
+            <button class="text-gray-400 underline px-2 py-1 "
+                    wire:click.prevent="$set('showing', false)">Cancel</button>
+        <button class="bg-blue-600 text-white rounded-md px-3 py-1 "
                 wire:click.prevent="save">Save</button>
         </div>
     </form>
