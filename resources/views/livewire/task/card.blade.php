@@ -1,4 +1,4 @@
-<div class="{{$this->bg}} m-1 px-3 w-full">
+<div class="{{$this->bg}} m-1 px-3 py-1 w-full rounded-sm">
     <div class="flex justify-between">
         <span>{{$task->name}}  [{{$task->status}}]</span>
         <span>Last component refresh: {{\Carbon\Carbon::now()->toTimeString()}}</span>
