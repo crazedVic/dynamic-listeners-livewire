@@ -1,9 +1,9 @@
 <div class="fixed inset-0 bg-black bg-opacity-50 {{$showing? '' : 'hidden'}}
     flex justify-center items-center">
     @if($task)
-    <form class="p-5 bg-white text-black border border-gray-300 shadow-md">
+    <form class="p-20 bg-white text-black border border-gray-300 shadow-md">
         Status
-        <select wire:model="task.status">
+        <select class="border border-gray-200 shadow rounded p-1" wire:model="task.status">
             <option value="Delayed">Delayed</option>
             <option value="Completed">Completed</option>
             <option value="New">New</option>

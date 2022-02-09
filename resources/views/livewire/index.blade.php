@@ -1,4 +1,4 @@
-<div class="w-full flex justify-center min-h-screen items-center bg-black text-white"
+<div class="py-10 w-full flex justify-center min-h-screen items-center bg-black text-white"
     x-data="{showEditModal: false}">
     <div class="w-full">
         @foreach($tasks as $task)

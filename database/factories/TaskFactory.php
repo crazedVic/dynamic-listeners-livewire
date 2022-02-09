@@ -17,7 +17,7 @@ class TaskFactory extends Factory
     public function definition()
     {
         return [
-            'name' => $this->faker->words(3, true),
+            'name' => $this->faker->sentence(3),
             'status' => $this->faker->randomElement(["New","Completed","Deleted","Delayed"])
         ];
     }
