@@ -13,7 +13,8 @@ class Edit extends Component
     public $showing = false;
 
     protected $rules = [
-        'task.status' => 'required'
+        'task.status' => 'required',
+        'task.name' => 'required|string|max:255'
     ];
 
     public function show(Task $task)
