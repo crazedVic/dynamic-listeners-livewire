@@ -6,6 +6,7 @@
 
         <title>Laravel</title>
         <link href="{{ asset('css/app.css') }}" rel="stylesheet">
+        <script src="{{ mix('js/app.js') }}" defer></script>
         @livewireStyles
     </head>
     <body class="antialiased">
