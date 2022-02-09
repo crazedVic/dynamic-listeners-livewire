@@ -28,7 +28,7 @@ class Card extends Component
             "Delayed" => "bg-red-500",
             "Completed" => "bg-green-500",
             "New" => "bg-blue-500",
-            "Deleted" => "bg-gray-500",
+            "Pending" => "bg-yellow-600",
             default => "",
         };
     }

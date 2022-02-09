@@ -13,16 +13,17 @@
         <div>Status
             <select class="ml-2 border border-gray-200 shadow rounded p-1"
                     wire:model="task.status">
-                <option value="Delayed">Delayed</option>
-                <option value="Completed">Completed</option>
-                <option value="New">New</option>
-                <option value="Deleted">Deleted</option>
+                <option value="Delayed">Delay</option>
+                <option value="Completed">Complete</option>
+                <option value="Pending">Not Started</option>
+                <option value="Canceled">Cancel</option>
             </select>
         </div>
         <div class="w-full text-right">
             <button class="text-gray-400 underline px-2 py-1 "
                     wire:click.prevent="$set('showing', false)">Cancel</button>
-        <button class="bg-blue-600 text-white rounded-md px-3 py-1 hover:bg-blue-700"
+        <button class="bg-blue-600 text-white rounded-md px-3 py-1 hover:bg-blue-700
+             shadow-md shadow-blue-300"
                 wire:click.prevent="save">Save</button>
         </div>
     </form>
