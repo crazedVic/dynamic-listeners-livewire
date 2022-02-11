@@ -7,7 +7,7 @@ use Livewire\Component;
 
 class Edit extends Component
 {
-    protected $listeners = ['show', '$refresh'];
+    protected $listeners = ['show'];
 
     public $task;
     public $showing = false;
@@ -21,7 +21,6 @@ class Edit extends Component
     {
         $this->task = $task;
         $this->showing = true;
-
     }
 
     public function render()
@@ -35,7 +34,6 @@ class Edit extends Component
         $this->task->save();
 
         $this->showing = false;
-        $this->emitSelf('$refresh');
         //tell card to refresh
         $this->emit('update-task-' . $this->task->id);
     }
